@@ -58,6 +58,6 @@ public class ZipMultipleFiles {
         assert urlTwo != null;
 
         ZipMultipleFiles.create(Arrays.asList(urlOne.getFile(), urlTwo.getFile()),
-                "./single-compress.zip");
+                "./multiple-compress.zip");
     }
 }
