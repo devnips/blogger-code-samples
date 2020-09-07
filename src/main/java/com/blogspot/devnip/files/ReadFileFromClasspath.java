@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  */
 public class ReadFileFromClasspath
 {
-    public static void main(String[] args)
+    public static String read()
     {
         InputStream is = ReadFileFromClasspath.class.getResourceAsStream("/sample-text-file.txt");
 
@@ -20,6 +20,6 @@ public class ReadFileFromClasspath
                 .lines()
                 .collect(Collectors.joining("\n"));
 
-        System.out.println(fileContent);
+        return fileContent;
     }
 }
