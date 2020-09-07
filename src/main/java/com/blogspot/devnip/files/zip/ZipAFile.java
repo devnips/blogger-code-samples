@@ -41,6 +41,6 @@ public class ZipAFile {
         URL url = ZipAFile.class.getResource("/sample-text-file.txt");
         assert url != null;
 
-        create(url.getFile(), "./single-compress.zip");
+        ZipAFile.create(url.getFile(), "./single-compress.zip");
     }
 }
