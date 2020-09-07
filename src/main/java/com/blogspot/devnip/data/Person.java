@@ -14,6 +14,12 @@ public class Person {
         this.name = name;
     }
 
+    public Person(Long id, String name, String country) {
+        this.id = id;
+        this.name = name;
+        this.country = country;
+    }
+
     public Long getId() {
         return id;
     }
