@@ -9,10 +9,9 @@ import java.util.stream.Collectors;
 /**
  * Read file content using plain Java 8
  */
-public class ReadFileFromClasspath
-{
-    public static String read()
-    {
+public class ReadFileFromClasspath {
+
+    public static String read() {
         InputStream is = ReadFileFromClasspath.class.getResourceAsStream("/sample-text-file.txt");
 
         String fileContent = new BufferedReader(

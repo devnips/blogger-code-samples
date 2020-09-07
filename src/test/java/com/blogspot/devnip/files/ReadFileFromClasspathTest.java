@@ -3,12 +3,10 @@ package com.blogspot.devnip.files;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class ReadFileFromClasspathTest
-{
+class ReadFileFromClasspathTest {
 
     @Test
-    void test()
-    {
+    void test() {
         Assertions.assertEquals("Content of sample text file.", ReadFileFromClasspath.read());
     }
 }
